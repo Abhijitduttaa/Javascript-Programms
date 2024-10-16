@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a, n;
+        n = Number(prompt("enter the length of the array"));
+        a = new Array(n);
+        for(i=0;i<a.length;i++){
+            a[i]=Number(prompt("enter array element"))
+        }
+        document.write("<table size='100' border='2'>")
+        a.forEach(function (value,index,array){
+            document.write("<tr>")
+            document.write("<td>" + index + "</td>" + " " +"<td>" + value+ "</td>"  + " " +"<td>" + array+"</td>")
+            document.write("</tr>")
+        })
+        document.write("</table>")
+    </script>
+</body>
+</html>

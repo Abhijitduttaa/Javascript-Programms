@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n,s=0,r,temp,t;
+        // n=Number(prompt("Enter a number"));
+        // temp = Math.pow(n,3);
+        n= 19683;
+        // temp = n**3;
+        t= temp;
+       
+        // document.write(temp)
+        while(n !=  0){
+            r= n%10;
+            s =s + r;
+            n = Math.floor(n/10);
+            // temp = (temp/10);
+        }
+        document.write(s);
+        if(n != s){
+            document.write("Dudeny number");
+        }
+        else{
+            document.write(" none Dudeny number");
+        }
+
+    </script>
+</body>
+</html>

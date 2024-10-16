@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function armstrong(n){
+            var s =0,r;
+            while(n>0){
+                r = n%10;
+                s =s +Math.pow(r,3);
+                n = Math.floor(n/10);
+            }
+            return s;
+        }
+        var n,z;
+        n= Number(prompt("enter a Number"));
+        z=armstrong(n);
+        if(z == n){
+            document.write("Armstong number")
+        }
+        else{
+            document.write("non-armstrong");
+        }
+    </script>
+</body>
+</html>

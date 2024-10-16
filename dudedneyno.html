@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n = 27;
+        var s = 0;
+        var t =Math.pow(n,3);
+        document.write(t)
+        while(n>0){
+            var r = n%10;
+            s = s+ r;
+            t = parseInt(t/10);
+        }
+        document.write(s);
+    </script>
+</body>
+</html>
